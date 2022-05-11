@@ -14,7 +14,7 @@ node('haimaxy-jnlp') {
     }
     stage('Build') {
         echo "3.Build Docker Image Stage"
-        sh "docker build -t cnych/docker-nginx-hello-world:${build_tag} ."
+        sh "docker build -t cnych/docker-helloworld12:${build_tag} ."
     }
     stage('Push') {
         echo "4.Push Docker Image Stage"
