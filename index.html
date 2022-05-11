@@ -1,59 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>CSS Website Layout</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
+ul {
+  list-style-type: none;
   margin: 0;
-}
-
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Style the top navigation bar */
-.topnav {
+  padding: 0;
   overflow: hidden;
   background-color: #333;
 }
 
-/* Style the topnav links */
-.topnav a {
+li {
   float: left;
+}
+
+li a {
   display: block;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+li a:hover {
+  background-color: #111;
 }
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h1>Header</h1>
-</div>
-
-<div class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-</div>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 
 </body>
 </html>
